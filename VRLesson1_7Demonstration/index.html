@@ -5,16 +5,16 @@
   <body>
     <a-scene>
 
-      <a-sphere position="-4 1.25 -2" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-sphere position="0 1.25 -2" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-sphere position="4 1.25 -2" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-sphere scale="2 1 1"position="-4 1.25 -2" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-sphere scale="1 2 1"position="0 1.25 -2" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-sphere scale="1 1 2"position="4 1.25 -2" radius="1.25" color="#EF2D5E"></a-sphere>
       
-      <a-cylinder position="-3 0.75 1" radius="0.5" height="1" color="#FFC65D"></a-cylinder>
-      <a-cylinder position="0 0.75 1" radius="0.5" height="1" color="#FFC65D"></a-cylinder>
+      <a-cylinder scale="0.5 1 1" segments-radial="3" rotation="-90 0 0 " position="-3 0.75 1" radius="0.5" height="1" color="#FFC65D"></a-cylinder>
+      <a-cylinder open-ended="true" side="double" rotation="90 0 0"  position="0 0.75 1" radius="0.5" height="1" color="#FFC65D"></a-cylinder>
       <a-cylinder position="3 0.75 1" radius="0.5" height="1" color="#FFC65D"></a-cylinder>
 
-      <a-sphere position="-4 4.25 -2"radius="1.25" color="#EF2D5E" side="double"></a-sphere>
-      <a-sphere position="0 4.25 -2" radius="1.25" color="#EF2D5E" side="double"></a-sphere>
+      <a-sphere  phi-start="0" phi-length="180" position="-4 4.25 -2"radius="1.25" color="#EF2D5E" side="double"></a-sphere>
+      <a-sphere theta-start="0"  theta-length = "90" position="0 4.25 -2" radius="1.25" color="#EF2D5E" side="double"></a-sphere>
       <a-sphere position="4 4.25 -2" radius="1.25" color="#EF2D5E" side="double"></a-sphere>
       
       <a-plane position="0 0 -1" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
